@@ -8,15 +8,15 @@ class Truck < Vehicle
     @trailer = false
   end
 
-  def has_trailer? #
+  def has_trailer? # Métodos de instância
     @trailer ? @trailer : false
   end
 
-  def attach_trailer #
+  def attach_trailer # Métodos de instância
     @trailer = true
   end
 
-  def travel #
+  def travel # Métodos de instância
     @odometro = super * 1000
   end
 end

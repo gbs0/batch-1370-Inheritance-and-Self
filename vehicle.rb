@@ -14,11 +14,11 @@ class Vehicle
     @odometro += km
   end
 
-  def self.categories # Ao criarmos um método de classe, podemos chamá-lo com Vehicle.categories
+  def self.categories # Método de classe, podemos chamá-lo com Vehicle.categories
     ["Car", "Truck", "SportCar", "PoliceCar", "Bus"]
   end
 
-  def self.generate_plate
+  def self.generate_plate # Método de classe, podemos chamá-lo com Vehicle.generate_plate
     alph = ("A".."Z").to_a.shuffle.sample(3).join("")
     num = (1..9).to_a.shuffle.sample(3).join("")
     plate = "#{alph}-#{num}"

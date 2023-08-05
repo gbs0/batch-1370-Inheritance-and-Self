@@ -1,6 +1,6 @@
 # Todo: Definir uma classe chamada "Bike", com os seguintes atributos "wheels" & "seats"
 class Bike # Classe
-  attr_reader :seats # Helpers que acessam ou fazer a leitura das variáveis de instância (atributos)
+  attr_reader :seats # Helpers que acessam ou fazem a leitura das variáveis de instância (atributos)
   attr_accessor :wheels
 
   def initialize # Método que cria um novo objeto do tipo Bike
@@ -19,6 +19,6 @@ puts caloi.wheels # => 2
 
 puts caloi.info # => This bike has 2 wheels and 1 seat(s).
 
-triciclo = Bike.new
+triciclo = Bike.new # Instância
 triciclo.wheels = 3
-puts triciclo.info
+puts triciclo.info# => This bike has 3 wheels and 1 seat(s).
